@@ -1,0 +1,398 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class Conexion.ConexionBD
+class Metodos.Metodos_Clientes
+class Metodos.Metodos_Compra
+class Metodos.Metodos_Comprobantes
+class Metodos.Metodos_Empleados
+class Metodos.Metodos_Laboratorio
+class Metodos.Metodos_Presentacion
+class Metodos.Metodos_Productos
+class Metodos.Metodos_Proveedor
+class Metodos.Metodos_User
+class Metodos.Metodos_Ventas
+class Metodos.Metodos_sql
+class Vista.AcercaDe
+class Vista.AdministrarPerfil
+class Vista.BuscarClientes
+class Vista.BuscarComprobante
+class Vista.BuscarComprobanteCompra
+class Vista.BuscarEmpleados
+class Vista.BuscarLaboratorio
+class Vista.BuscarPresentacion
+class Vista.BuscarProductosCompras
+class Vista.BuscarProductosVentas
+class Vista.BuscarProveedor
+class Vista.ConsultaCompras
+class Vista.ConsultaVentas
+class Vista.ConsultasClientes
+class Vista.ConsultasEmpleados
+class Vista.ConsultasProductos
+class Vista.ConsultasProveedores
+class Vista.Principal
+class Vista.TotalVentasRealizadas
+class Vista.Ventas
+class Vista.frmCaja
+class Vista.frmClientes
+class Vista.frmCompras
+class Vista.frmComprobante
+class Vista.frmEmpleados
+class Vista.frmLaboratorio
+class Vista.frmLogin
+class Vista.frmPresentacion
+class Vista.frmPrincipal
+class Vista.frmProductos
+class Vista.frmProveedor
+class Vista.frmUsuarios
+class com.jtattoo.plaf.About
+class java.awt.Color
+class java.awt.Component
+class java.awt.Desktop
+class java.awt.Dimension
+class java.awt.Image
+class java.awt.Shape
+class java.awt.event.KeyEvent
+class java.awt.geom.RoundRectangle2D
+class java.io.BufferedReader
+class java.io.File
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.FileOutputStream
+class java.io.FileReader
+class java.io.IOException
+class java.io.InputStream
+class java.io.OutputStream
+class java.net.URI
+class java.net.URISyntaxException
+class java.sql.Connection
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.text.DecimalFormat
+class java.text.DecimalFormatSymbols
+class java.text.SimpleDateFormat
+class java.util.Date
+class java.util.GregorianCalendar
+class java.util.HashMap
+class java.util.Map
+class java.util.Scanner
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.Icon
+class javax.swing.ImageIcon
+class javax.swing.JComponent
+class javax.swing.JFileChooser
+class javax.swing.JFrame
+class javax.swing.JInternalFrame
+class javax.swing.JLabel
+class javax.swing.JOptionPane
+class javax.swing.JTable
+class javax.swing.SwingConstants
+class javax.swing.filechooser.FileNameExtensionFilter
+class javax.swing.table.DefaultTableCellRenderer
+class javax.swing.table.DefaultTableModel
+class javax.swing.table.TableCellRenderer
+interface java.lang.Runnable
+Vista.AcercaDe ..> java.lang.SuppressWarnings
+Vista.AcercaDe ..> com.jtattoo.plaf.About
+Vista.AcercaDe ..> java.awt.Desktop
+Vista.AcercaDe ..> java.io.IOException
+Vista.AcercaDe ..> java.net.URI
+Vista.AcercaDe ..> java.net.URISyntaxException
+Vista.AcercaDe ..> java.util.logging.Level
+Vista.AcercaDe ..> java.util.logging.Logger
+Vista.AcercaDe --|> javax.swing.JInternalFrame
+Vista.AdministrarPerfil ..> java.lang.SuppressWarnings
+Vista.AdministrarPerfil ..> Conexion.ConexionBD
+Vista.AdministrarPerfil ..> Metodos.Metodos_User
+Vista.AdministrarPerfil ..> java.awt.Image
+Vista.AdministrarPerfil ..> java.io.BufferedReader
+Vista.AdministrarPerfil ..> java.io.File
+Vista.AdministrarPerfil ..> java.io.FileNotFoundException
+Vista.AdministrarPerfil ..> java.io.FileReader
+Vista.AdministrarPerfil ..> java.io.IOException
+Vista.AdministrarPerfil ..> java.sql.Connection
+Vista.AdministrarPerfil ..> java.util.HashMap
+Vista.AdministrarPerfil ..> java.util.Map
+Vista.AdministrarPerfil ..> javax.swing.ImageIcon
+Vista.AdministrarPerfil ..> javax.swing.JFileChooser
+Vista.AdministrarPerfil --|> javax.swing.JInternalFrame
+Vista.AdministrarPerfil ..> javax.swing.JOptionPane
+Vista.AdministrarPerfil ..> javax.swing.filechooser.FileNameExtensionFilter
+Vista.BuscarClientes ..> java.lang.SuppressWarnings
+Vista.BuscarClientes ..> Conexion.ConexionBD
+Vista.BuscarClientes --|> javax.swing.JInternalFrame
+Vista.BuscarClientes ..> javax.swing.table.DefaultTableModel
+Vista.BuscarComprobante ..> java.lang.SuppressWarnings
+Vista.BuscarComprobante ..> Conexion.ConexionBD
+Vista.BuscarComprobante --|> javax.swing.JInternalFrame
+Vista.BuscarComprobante ..> javax.swing.table.DefaultTableModel
+Vista.BuscarComprobanteCompra ..> java.lang.SuppressWarnings
+Vista.BuscarComprobanteCompra ..> Conexion.ConexionBD
+Vista.BuscarComprobanteCompra --|> javax.swing.JInternalFrame
+Vista.BuscarComprobanteCompra ..> javax.swing.table.DefaultTableModel
+Vista.BuscarEmpleados ..> java.lang.SuppressWarnings
+Vista.BuscarEmpleados ..> Conexion.ConexionBD
+Vista.BuscarEmpleados --|> javax.swing.JInternalFrame
+Vista.BuscarEmpleados ..> javax.swing.table.DefaultTableModel
+Vista.BuscarLaboratorio ..> java.lang.SuppressWarnings
+Vista.BuscarLaboratorio ..> Conexion.ConexionBD
+Vista.BuscarLaboratorio --|> javax.swing.JInternalFrame
+Vista.BuscarLaboratorio ..> javax.swing.table.DefaultTableModel
+Vista.BuscarPresentacion ..> java.lang.SuppressWarnings
+Vista.BuscarPresentacion ..> Conexion.ConexionBD
+Vista.BuscarPresentacion --|> javax.swing.JInternalFrame
+Vista.BuscarPresentacion ..> javax.swing.table.DefaultTableModel
+Vista.BuscarProductosCompras ..> java.lang.SuppressWarnings
+Vista.BuscarProductosCompras ..> Conexion.ConexionBD
+Vista.BuscarProductosCompras ..> Metodos.Metodos_Productos
+Vista.BuscarProductosCompras --|> javax.swing.JInternalFrame
+Vista.BuscarProductosCompras ..> javax.swing.JOptionPane
+Vista.BuscarProductosCompras ..> javax.swing.table.DefaultTableModel
+Vista.BuscarProductosVentas ..> java.lang.SuppressWarnings
+Vista.BuscarProductosVentas ..> Conexion.ConexionBD
+Vista.BuscarProductosVentas ..> Metodos.Metodos_Productos
+Vista.BuscarProductosVentas --|> javax.swing.JInternalFrame
+Vista.BuscarProductosVentas ..> javax.swing.JOptionPane
+Vista.BuscarProductosVentas ..> javax.swing.table.DefaultTableModel
+Vista.BuscarProveedor ..> java.lang.SuppressWarnings
+Vista.BuscarProveedor ..> Conexion.ConexionBD
+Vista.BuscarProveedor ..> Vista.frmCompras
+Vista.BuscarProveedor --|> javax.swing.JInternalFrame
+Vista.BuscarProveedor ..> javax.swing.table.DefaultTableModel
+Vista.ConsultaCompras ..> java.lang.SuppressWarnings
+Vista.ConsultaCompras ..> Conexion.ConexionBD
+Vista.ConsultaCompras ..> Metodos.Metodos_Compra
+Vista.ConsultaCompras ..> java.awt.Color
+Vista.ConsultaCompras ..> java.awt.Component
+Vista.ConsultaCompras ..> java.sql.Connection
+Vista.ConsultaCompras ..> java.sql.ResultSet
+Vista.ConsultaCompras ..> java.text.SimpleDateFormat
+Vista.ConsultaCompras ..> java.util.Date
+Vista.ConsultaCompras ..> java.util.HashMap
+Vista.ConsultaCompras ..> java.util.Map
+Vista.ConsultaCompras --|> javax.swing.JInternalFrame
+Vista.ConsultaCompras ..> javax.swing.JLabel
+Vista.ConsultaCompras ..> javax.swing.JOptionPane
+Vista.ConsultaCompras ..> javax.swing.JTable
+Vista.ConsultaCompras ..> javax.swing.SwingConstants
+Vista.ConsultaCompras ..> javax.swing.table.DefaultTableCellRenderer
+Vista.ConsultaCompras ..> javax.swing.table.DefaultTableModel
+Vista.ConsultaCompras ..> javax.swing.table.TableCellRenderer
+Vista.ConsultaVentas ..> java.lang.SuppressWarnings
+Vista.ConsultaVentas ..> Conexion.ConexionBD
+Vista.ConsultaVentas ..> Metodos.Metodos_Ventas
+Vista.ConsultaVentas ..> java.awt.Color
+Vista.ConsultaVentas ..> java.awt.Component
+Vista.ConsultaVentas ..> java.awt.Dimension
+Vista.ConsultaVentas ..> java.sql.Connection
+Vista.ConsultaVentas ..> java.sql.ResultSet
+Vista.ConsultaVentas ..> java.text.SimpleDateFormat
+Vista.ConsultaVentas ..> java.util.Date
+Vista.ConsultaVentas ..> java.util.HashMap
+Vista.ConsultaVentas ..> java.util.Map
+Vista.ConsultaVentas ..> javax.swing.JComponent
+Vista.ConsultaVentas --|> javax.swing.JInternalFrame
+Vista.ConsultaVentas ..> javax.swing.JLabel
+Vista.ConsultaVentas ..> javax.swing.JOptionPane
+Vista.ConsultaVentas ..> javax.swing.JTable
+Vista.ConsultaVentas ..> javax.swing.SwingConstants
+Vista.ConsultaVentas ..> javax.swing.table.DefaultTableCellRenderer
+Vista.ConsultaVentas ..> javax.swing.table.DefaultTableModel
+Vista.ConsultaVentas ..> javax.swing.table.TableCellRenderer
+Vista.ConsultasClientes ..> java.lang.SuppressWarnings
+Vista.ConsultasClientes ..> Conexion.ConexionBD
+Vista.ConsultasClientes ..> java.util.logging.Level
+Vista.ConsultasClientes ..> java.util.logging.Logger
+Vista.ConsultasClientes --|> javax.swing.JInternalFrame
+Vista.ConsultasClientes ..> javax.swing.table.DefaultTableModel
+Vista.ConsultasEmpleados ..> java.lang.SuppressWarnings
+Vista.ConsultasEmpleados ..> Conexion.ConexionBD
+Vista.ConsultasEmpleados ..> java.util.logging.Level
+Vista.ConsultasEmpleados ..> java.util.logging.Logger
+Vista.ConsultasEmpleados --|> javax.swing.JInternalFrame
+Vista.ConsultasEmpleados ..> javax.swing.table.DefaultTableModel
+Vista.ConsultasProductos ..> java.lang.SuppressWarnings
+Vista.ConsultasProductos ..> Conexion.ConexionBD
+Vista.ConsultasProductos ..> Metodos.Metodos_Productos
+Vista.ConsultasProductos ..> java.util.logging.Level
+Vista.ConsultasProductos ..> java.util.logging.Logger
+Vista.ConsultasProductos --|> javax.swing.JInternalFrame
+Vista.ConsultasProductos ..> javax.swing.JOptionPane
+Vista.ConsultasProductos ..> javax.swing.table.DefaultTableModel
+Vista.ConsultasProveedores ..> java.lang.SuppressWarnings
+Vista.ConsultasProveedores ..> Conexion.ConexionBD
+Vista.ConsultasProveedores ..> java.util.logging.Level
+Vista.ConsultasProveedores ..> java.util.logging.Logger
+Vista.ConsultasProveedores --|> javax.swing.JInternalFrame
+Vista.ConsultasProveedores ..> javax.swing.table.DefaultTableModel
+Vista.Principal ..> Conexion.ConexionBD
+Vista.TotalVentasRealizadas ..> java.lang.SuppressWarnings
+Vista.TotalVentasRealizadas ..> Conexion.ConexionBD
+Vista.TotalVentasRealizadas ..> Metodos.Metodos_Ventas
+Vista.TotalVentasRealizadas ..> java.awt.Color
+Vista.TotalVentasRealizadas ..> java.awt.Component
+Vista.TotalVentasRealizadas ..> java.sql.Connection
+Vista.TotalVentasRealizadas ..> java.sql.ResultSet
+Vista.TotalVentasRealizadas ..> java.text.SimpleDateFormat
+Vista.TotalVentasRealizadas --|> javax.swing.JInternalFrame
+Vista.TotalVentasRealizadas ..> javax.swing.JLabel
+Vista.TotalVentasRealizadas ..> javax.swing.JOptionPane
+Vista.TotalVentasRealizadas ..> javax.swing.JTable
+Vista.TotalVentasRealizadas ..> javax.swing.SwingConstants
+Vista.TotalVentasRealizadas ..> javax.swing.table.DefaultTableCellRenderer
+Vista.TotalVentasRealizadas ..> javax.swing.table.DefaultTableModel
+Vista.TotalVentasRealizadas ..> javax.swing.table.TableCellRenderer
+Vista.Ventas ..> java.lang.SuppressWarnings
+Vista.Ventas ..> Conexion.ConexionBD
+Vista.Ventas ..> Metodos.Metodos_Productos
+Vista.Ventas ..> Metodos.Metodos_Ventas
+Vista.Ventas ..> java.awt.Color
+Vista.Ventas ..> java.awt.Component
+Vista.Ventas ..> java.sql.Connection
+Vista.Ventas ..> java.sql.ResultSet
+Vista.Ventas ..> java.sql.SQLException
+Vista.Ventas ..> java.text.DecimalFormat
+Vista.Ventas ..> java.text.DecimalFormatSymbols
+Vista.Ventas ..> java.text.SimpleDateFormat
+Vista.Ventas ..> java.util.Date
+Vista.Ventas ..> java.util.HashMap
+Vista.Ventas ..> java.util.Map
+Vista.Ventas ..> java.util.Scanner
+Vista.Ventas --|> javax.swing.JInternalFrame
+Vista.Ventas ..> javax.swing.table.DefaultTableCellRenderer
+Vista.Ventas ..> javax.swing.table.DefaultTableModel
+Vista.Ventas ..> javax.swing.table.TableCellRenderer
+Vista.frmCaja ..> Metodos.Metodos_Ventas
+Vista.frmCaja ..> java.awt.Color
+Vista.frmCaja ..> java.awt.Component
+Vista.frmCaja ..> java.sql.ResultSet
+Vista.frmCaja ..> java.text.SimpleDateFormat
+Vista.frmCaja ..> java.util.Date
+Vista.frmCaja --|> javax.swing.JInternalFrame
+Vista.frmCaja ..> javax.swing.JLabel
+Vista.frmCaja ..> javax.swing.JOptionPane
+Vista.frmCaja ..> javax.swing.JTable
+Vista.frmCaja ..> javax.swing.SwingConstants
+Vista.frmCaja ..> javax.swing.table.DefaultTableCellRenderer
+Vista.frmCaja ..> javax.swing.table.DefaultTableModel
+Vista.frmCaja ..> javax.swing.table.TableCellRenderer
+Vista.frmClientes ..> java.lang.SuppressWarnings
+Vista.frmClientes ..> Conexion.ConexionBD
+Vista.frmClientes ..> Metodos.Metodos_Clientes
+Vista.frmClientes ..> java.sql.Connection
+Vista.frmClientes ..> java.sql.ResultSet
+Vista.frmClientes ..> java.sql.SQLException
+Vista.frmClientes ..> java.sql.Statement
+Vista.frmClientes ..> java.util.logging.Level
+Vista.frmClientes ..> java.util.logging.Logger
+Vista.frmClientes --|> javax.swing.JInternalFrame
+Vista.frmClientes ..> javax.swing.JOptionPane
+Vista.frmClientes ..> javax.swing.table.DefaultTableModel
+Vista.frmCompras ..> java.lang.SuppressWarnings
+Vista.frmCompras ..> Conexion.ConexionBD
+Vista.frmCompras ..> Metodos.Metodos_Compra
+Vista.frmCompras ..> Metodos.Metodos_Productos
+Vista.frmCompras ..> java.awt.Color
+Vista.frmCompras ..> java.awt.Component
+Vista.frmCompras ..> java.awt.event.KeyEvent
+Vista.frmCompras ..> java.sql.Connection
+Vista.frmCompras ..> java.sql.ResultSet
+Vista.frmCompras ..> java.sql.SQLException
+Vista.frmCompras --|> javax.swing.JInternalFrame
+Vista.frmComprobante ..> java.lang.SuppressWarnings
+Vista.frmComprobante ..> Conexion.ConexionBD
+Vista.frmComprobante ..> Metodos.Metodos_Comprobantes
+Vista.frmComprobante --|> javax.swing.JInternalFrame
+Vista.frmComprobante ..> javax.swing.JOptionPane
+Vista.frmComprobante ..> javax.swing.table.DefaultTableModel
+Vista.frmEmpleados ..> java.lang.SuppressWarnings
+Vista.frmEmpleados ..> Conexion.ConexionBD
+Vista.frmEmpleados ..> Metodos.Metodos_Empleados
+Vista.frmEmpleados ..> java.sql.Connection
+Vista.frmEmpleados ..> java.sql.ResultSet
+Vista.frmEmpleados ..> java.sql.SQLException
+Vista.frmEmpleados ..> java.sql.Statement
+Vista.frmEmpleados ..> java.util.logging.Level
+Vista.frmEmpleados ..> java.util.logging.Logger
+Vista.frmEmpleados --|> javax.swing.JInternalFrame
+Vista.frmEmpleados ..> javax.swing.JOptionPane
+Vista.frmEmpleados ..> javax.swing.table.DefaultTableModel
+Vista.frmLaboratorio ..> java.lang.SuppressWarnings
+Vista.frmLaboratorio ..> Conexion.ConexionBD
+Vista.frmLaboratorio ..> Metodos.Metodos_Laboratorio
+Vista.frmLaboratorio ..> java.sql.Connection
+Vista.frmLaboratorio --|> javax.swing.JInternalFrame
+Vista.frmLaboratorio ..> javax.swing.JOptionPane
+Vista.frmLaboratorio ..> javax.swing.table.DefaultTableModel
+Vista.frmLogin ..> java.lang.SuppressWarnings
+Vista.frmLogin ..> Metodos.Metodos_sql
+Vista.frmLogin ..> java.awt.Shape
+Vista.frmLogin ..> java.awt.geom.RoundRectangle2D
+Vista.frmLogin ..> javax.swing.Icon
+Vista.frmLogin ..> javax.swing.ImageIcon
+Vista.frmLogin --|> javax.swing.JFrame
+Vista.frmLogin ..> javax.swing.JOptionPane
+Vista.frmPresentacion ..> java.lang.SuppressWarnings
+Vista.frmPresentacion ..> Conexion.ConexionBD
+Vista.frmPresentacion ..> Metodos.Metodos_Presentacion
+Vista.frmPresentacion ..> java.util.HashMap
+Vista.frmPresentacion ..> java.util.Map
+Vista.frmPresentacion --|> javax.swing.JInternalFrame
+Vista.frmPresentacion ..> javax.swing.JOptionPane
+Vista.frmPresentacion ..> javax.swing.table.DefaultTableModel
+Vista.frmPrincipal ..> java.lang.SuppressWarnings
+Vista.frmPrincipal ..> Metodos.Metodos_User
+Vista.frmPrincipal ..> java.util.GregorianCalendar
+Vista.frmPrincipal --|> javax.swing.JFrame
+Vista.frmPrincipal ..> javax.swing.JInternalFrame
+Vista.frmPrincipal ..> javax.swing.JOptionPane
+Vista.frmPrincipal --|> java.lang.Runnable
+Vista.frmProductos ..> java.lang.SuppressWarnings
+Vista.frmProductos ..> Conexion.ConexionBD
+Vista.frmProductos ..> Metodos.Metodos_Productos
+Vista.frmProductos ..> java.sql.Connection
+Vista.frmProductos ..> java.sql.ResultSet
+Vista.frmProductos ..> java.util.Date
+Vista.frmProductos --|> javax.swing.JInternalFrame
+Vista.frmProductos ..> javax.swing.JOptionPane
+Vista.frmProductos ..> javax.swing.table.DefaultTableModel
+Vista.frmProveedor ..> java.lang.SuppressWarnings
+Vista.frmProveedor ..> Conexion.ConexionBD
+Vista.frmProveedor ..> Metodos.Metodos_Proveedor
+Vista.frmProveedor ..> java.awt.Color
+Vista.frmProveedor ..> java.awt.Component
+Vista.frmProveedor ..> java.awt.event.KeyEvent
+Vista.frmProveedor ..> java.sql.Connection
+Vista.frmProveedor ..> java.sql.ResultSet
+Vista.frmProveedor ..> java.sql.SQLException
+Vista.frmProveedor ..> java.sql.Statement
+Vista.frmProveedor ..> java.util.HashMap
+Vista.frmProveedor ..> java.util.Map
+Vista.frmProveedor ..> java.util.logging.Level
+Vista.frmProveedor ..> java.util.logging.Logger
+Vista.frmProveedor --|> javax.swing.JInternalFrame
+Vista.frmProveedor ..> javax.swing.table.DefaultTableCellRenderer
+Vista.frmProveedor ..> javax.swing.table.DefaultTableModel
+Vista.frmProveedor ..> javax.swing.table.TableCellRenderer
+Vista.frmUsuarios ..> java.lang.SuppressWarnings
+Vista.frmUsuarios ..> Conexion.ConexionBD
+Vista.frmUsuarios ..> Metodos.Metodos_User
+Vista.frmUsuarios ..> java.awt.Image
+Vista.frmUsuarios ..> java.io.BufferedReader
+Vista.frmUsuarios ..> java.io.File
+Vista.frmUsuarios ..> java.io.FileInputStream
+Vista.frmUsuarios ..> java.io.FileNotFoundException
+Vista.frmUsuarios ..> java.io.FileOutputStream
+Vista.frmUsuarios ..> java.io.FileReader
+Vista.frmUsuarios ..> java.io.IOException
+Vista.frmUsuarios ..> java.io.InputStream
+Vista.frmUsuarios ..> java.io.OutputStream
+Vista.frmUsuarios ..> java.util.logging.Level
+Vista.frmUsuarios ..> java.util.logging.Logger
+Vista.frmUsuarios ..> javax.swing.ImageIcon
+Vista.frmUsuarios ..> javax.swing.JFileChooser
+Vista.frmUsuarios --|> javax.swing.JInternalFrame
+Vista.frmUsuarios ..> javax.swing.JOptionPane
+Vista.frmUsuarios ..> javax.swing.filechooser.FileNameExtensionFilter
+@enduml
